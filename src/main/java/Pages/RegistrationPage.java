@@ -20,8 +20,6 @@ public class RegistrationPage {
     private By firstName = By.id("FirstName");
     private By lastName = By.id("LastName");
     private By day = By.name("DateOfBirthDay");
-    private By month = By.name("DateOfBirthMonth");
-    private By year = By.name("DateOfBirthYear");
     private By email = By.id("Email");
     private By password = By.id("Password");
     private By confirmPassword = By.id("ConfirmPassword");

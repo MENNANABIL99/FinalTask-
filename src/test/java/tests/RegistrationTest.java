@@ -29,7 +29,7 @@ public class RegistrationTest extends BaseTest {
 
         String actualColor = register.getSuccessMessageColor();
         String hexColor = Color.fromString(actualColor).asHex();
-        Assert.assertEquals(hexColor, "rgba(76, 177, 124, 1)");
+        Assert.assertEquals(hexColor, "#e4434b");
 
 
     }

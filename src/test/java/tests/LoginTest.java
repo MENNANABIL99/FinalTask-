@@ -4,6 +4,9 @@ import BaseTest.BaseTest;
 import Pages.LoginPage;
 import org.testng.asserts.SoftAssert;
 import org.openqa.selenium.support.Color;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
+
 
 public class LoginTest extends BaseTest {
 
@@ -31,6 +34,9 @@ public class LoginTest extends BaseTest {
         login.enterEmail("wrong@example.com");
         login.enterPassword("P@ssw0rd");
         login.clickLogin();
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
 
         SoftAssert softAssert = new SoftAssert();
 
